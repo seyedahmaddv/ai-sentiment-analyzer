@@ -1,6 +1,6 @@
 from transformers import pipeline
 
-بارگذاری مدل آماده از Hugging Face
+# بارگذاری مدل آماده از Hugging Face
 sentiment_pipeline = pipeline("sentiment-analysis")
 
 def analyze_text(text: str):
