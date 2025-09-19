@@ -10,11 +10,11 @@ def analyze_text(text: str):
         "score": round(result['score'], 3)
     }
 
-if name == "main":
+if __name__ == "__main__":
     print("=== AI Sentiment Analyzer ===")
     while True:
-        user_input = input("متن خود را وارد کنید (یا 'exit' برای خروج): ")
+        user_input = input("Enter your text (or 'exit' to exit): ")
         if user_input.lower() == "exit":
             break
-        output = analyzetext(userinput)
-        print(f"نتیجه: {output['label']} (اعتماد: {output['score']})\n")
+        output = analyze_text(user_input)
+        print(f"result: {output['label']} (trust: {output['score']})\n")
